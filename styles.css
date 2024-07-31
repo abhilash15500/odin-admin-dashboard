@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -14,7 +15,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: .9fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.9fr 4fr;
     /* gap: 10px; */
 }
 
@@ -67,15 +68,85 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    align-self: center;
 }
 
 
 .navbar-top {
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr 0.2fr 0.5fr;
+    grid-template-columns: 0.1fr 0.6fr 0.3fr 0.4fr 0.2fr;
     align-items: center;
 }
 
-.search-svg,.bell-svg {
+.search-svg,.bell-svg,.avatar {
     justify-self: end;
+    
+}
+
+
+
+#username {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+#search {
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    height: 4vh;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#username {
+    justify-self: start;
+    padding-left: 10px;
+}
+
+.navbar-top div {
+    justify-self: end;
+}
+
+
+ul {
+    list-style-type: none;
+    
+}
+
+li:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-bottom-div1  {
+   
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    column-gap: 20px;
+    
+}
+
+
+.navbar-bottom {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+
+.navbar-bottom-div2 {
+    justify-self: end;
+    padding-right: 70px;
+}
+
+.navbar button {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 10px;
+    width: calc(40px + 4vw);
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
 }
