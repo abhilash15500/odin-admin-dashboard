@@ -3,7 +3,7 @@
 Built an admin dashboard for The Odin Project using css flexbox and  grids using minmax and autofit and fr units along with web fonts for typography.
 
 
-Live link - https://abhilash15500.github.io/odin-admin-dashboard/
+Live link - https://xplozion15.github.io/odin-admin-dashboard/
 
 
 
